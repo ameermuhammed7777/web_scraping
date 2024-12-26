@@ -27,7 +27,7 @@ def fetch_file_links(base_url, file_extensions=None):
 
 def main():
     st.title("File Link Fetcher")
-    st.write("Enter a URL to extract downloadable file links.")
+    st.write("Enter a URL to download pdf file links.")
     url = st.text_input("Enter URL", "")
     file_extensions = ['.pdf', '.xlsx', '.docx', '.zip', '.csv', '.jpg', '.mp4', '.rar', '.json', '.py']
     if st.button("Fetch File Links"):
